@@ -8,4 +8,4 @@ RUN gem install google-cloud-secret_manager
 RUN gem install google-cloud-memcache
 
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
-curl -sSL https://sdk.cloud.google.com | bash
+RUN curl -sSL https://sdk.cloud.google.com | bash
