@@ -7,5 +7,7 @@ RUN gem install google-cloud-pubsub
 RUN gem install google-cloud-secret_manager
 RUN gem install google-cloud-memcache
 
+ENV CLOUDSDK_INSTALL_DIR /usr/local/gcloud/
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
+
 RUN curl -sSL https://sdk.cloud.google.com | bash
